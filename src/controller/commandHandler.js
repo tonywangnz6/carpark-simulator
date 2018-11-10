@@ -21,7 +21,7 @@ export let commandHandler = (dimensions, bus, command) => {
         switch (commandType) {
             case 'place':
                 let commandInfo = commandArray[1].split(',');
-                return bus[commandType](commandInfo[0], commandInfo[1], commandInfo[2]);
+                return bus[commandType](dimensions, commandInfo[0], commandInfo[1], commandInfo[2]);
             case 'move':
                 return bus[commandType](dimensions);
             case 'left':
