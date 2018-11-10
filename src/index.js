@@ -1,2 +1,3 @@
+import { view } from './view.js';
 
-console.log('test');
+view();
