@@ -2,11 +2,25 @@
 <html>
 <head>
     <title>Getting Started</title>
+    <style>
+        .container {
+            display: flex;
+        }
+    </style>
 </head>
-<body>
-<input id="command-input" type="text" placeholder="enter a command" />
-<button id="command-submit">submit</button>
-<div id="output"></div>
-<script src="main.js"></script>
-</body>
+    <body>
+        <div class="container">
+            <div class="file-input">
+                <input type="file" id="files"/>
+                <output id="result" />
+            </div>
+            <div class="type-input">
+                <input id="command-input" type="text" placeholder="enter a command" />
+                <button id="command-submit">submit</button>
+                <div id="output"></div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
 </html>
