@@ -1,3 +1,3 @@
-import { view } from './view.js';
+import { view } from './view/view.js';
 
 view();
