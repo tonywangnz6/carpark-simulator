@@ -31,7 +31,7 @@ export class Bus {
     move(dimensions) {
         switch (this.location.f) {
             case 'north':
-                if(this.location.y > dimensions.getDimensions().y - 1) {
+                if(this.location.y >= dimensions.getDimensions().y - 1) {
                     return 'out of carpark range';
                 }else {
                     this.location.y++;
@@ -45,7 +45,7 @@ export class Bus {
                     return 'bus move on step to south';
                 }
             case 'east':
-                if(this.location.x > dimensions.getDimensions().x - 1) {
+                if(this.location.x >= dimensions.getDimensions().x - 1) {
                     return 'out of carpark range';
                 }else {
                     this.location.x++;

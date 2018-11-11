@@ -1,6 +1,6 @@
 import {commandHandler} from "../controller/commandHandler";
 
-export let file = (event, initial) => {
+export const file = (event, initial) => {
     if (window.File && window.FileReader && window.FileList && window.Blob) {
         let files = event.target.files; //FileList object
         let output = document.getElementById("result");
