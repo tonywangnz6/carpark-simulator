@@ -1,6 +1,6 @@
 import {commandHandler} from "../controller/commandHandler";
 
-export let eventHandler = (initial) => {
+export const eventHandler = (initial) => {
     let input =  document.getElementById("command-input"),
       output = document.getElementById("output"),
       command = input.value.trim(),

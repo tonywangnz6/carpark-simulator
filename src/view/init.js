@@ -4,7 +4,7 @@ import {Carpark} from "../model/carpark";
 
 export const init = () => {
     let bus = new Bus(),
-      dimensions = new Carpark();
+        dimensions = new Carpark();
 
     return {
         bus: bus,
