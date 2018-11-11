@@ -35,28 +35,28 @@ export class Bus {
                     return 'out of carpark range';
                 }else {
                     this.location.y++;
-                    return 'bus move on step to north';
+                    return 'bus move on step to NORTH';
                 }
             case 'south':
                 if(this.location.y <= 0) {
                     return 'out of carpark range';
                 }else {
                     this.location.y--;
-                    return 'bus move on step to south';
+                    return 'bus move on step to SOUTH';
                 }
             case 'east':
                 if(this.location.x >= dimensions.getDimensions().x - 1) {
                     return 'out of carpark range';
                 }else {
                     this.location.x++;
-                    return 'bus move on step to east';
+                    return 'bus move on step to EAST';
                 }
             case 'west':
                 if(this.location.x <= 0) {
                     return 'out of carpark range';
                 }else {
                     this.location.x--;
-                    return 'bus move on step to west';
+                    return 'bus move on step to WEST';
                 }
         }
     }

@@ -27,7 +27,7 @@ export const commandHandler = (dimensions, bus, command) => {
             case 'right':
                 return bus[commandType]();
             case 'report':
-                return bus.getLocation().x +  ',' + bus.getLocation().y +  ',' + bus.getLocation().f;
+                return bus.getLocation().x +  ',' + bus.getLocation().y +  ',' + bus.getLocation().f.toUpperCase();
             default:
                 return 'not valid command!';
         }
