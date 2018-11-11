@@ -12,7 +12,7 @@ export const file = (event, initial) => {
 
             picReader.addEventListener("load", function(event) {
 
-                let result = event.target.result,
+                const result = event.target.result,
                     resultsArray = result.split('\n'),
                     div = document.createElement("div");
                 div.innerText = result;
@@ -20,7 +20,7 @@ export const file = (event, initial) => {
 
                 resultsArray.forEach(result => {
                     if(result !== '') {
-                        let output = document.getElementById("output"),
+                        const output = document.getElementById("output"),
                           element = document.createElement('p');
 
                         // while (output.hasChildNodes()) {
